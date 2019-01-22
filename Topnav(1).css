@@ -25,9 +25,45 @@ body {
   display: block;
   transition: .3s background-color;
 }
+.nav x {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+.nav c {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+.nav d {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+.nav e {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
 
 .nav a:hover {
-  background-color: #005f5f;
+  background-color: Tomato;
+}
+.nav x:hover {
+  background-color: Orange;
+}
+.nav c:hover {
+  background-color: DodgerBlue;
+}
+.nav d:hover {
+  background-color: MediumSeaGreen;
+}
+.nav e:hover {
+  background-color: SlateBlue;
 }
 
 .nav a.active {
@@ -44,24 +80,8 @@ body {
     line-height: 50px;
     font-size: 1.4em;
   }
-
-  /* Option 1 - Display Inline */
   .nav li {
     display: inline-block;
     margin-right: -4px;
   }
-
-  /* Options 2 - Float
-  .nav li {
-    float: left;
-  }
-  .nav ul {
-    overflow: auto;
-    width: 600px;
-    margin: 0 auto;
-  }
-  .nav {
-    background-color: #444;
-  }
-  */
 }
