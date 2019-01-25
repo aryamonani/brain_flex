@@ -13,17 +13,17 @@ body {
 }
 .nav li {
   font-family: 'Oswald', sans-serif;
-  font-size: 1.2em;
-  line-height: 20px;
-  height: 20px;
-  border-bottom: 10px solid #888;
+  font-size: 1em;
+  line-height: 10px;
+  height: 10px;
+  border-bottom: 5px solid #888;
 }
 #logo{
-    position:absolute;
-    top:1px;
-    left:340px;
-    width:68px;
-    height:68px;
+    position: relative;
+    top: 8px;
+    left:40px;
+    width:30px;
+    height:30px;
     overflow:hidden;
 }
 .nav a {
