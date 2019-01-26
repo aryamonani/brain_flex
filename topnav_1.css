@@ -20,7 +20,7 @@ body {
 }
 #logo{
     position: relative;
-    top: 8px;
+    top: 6px;
     left:40px;
     width:30px;
     height:30px;
@@ -58,19 +58,19 @@ body {
 }
 
 .nav a:hover {
-  background-color: Tomato;
+  background-color: #f74c36;
 }
 .nav x:hover {
   background-color: Orange;
 }
 .nav c:hover {
-  background-color: DodgerBlue;
-}
-.nav d:hover {
   background-color: MediumSeaGreen;
 }
+.nav d:hover {
+  background-color: DodgerBlue;
+}
 .nav e:hover {
-  background-color: SlateBlue;
+  background-color: Purple;
 }
 
 .nav a.active {
@@ -79,7 +79,7 @@ body {
   cursor: default;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 300px) {
   .nav li {
     width: 120px;
     border-bottom: none;
