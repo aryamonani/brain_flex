@@ -5,10 +5,11 @@
 }
 
 .buttons {
-    margin: none;
+    margin: 0;
+    padding: 0;
     text-align: center;
     position: relative;
-    top: -25vh;
+    top: -162px;
 }
 
 .btn-hover {
