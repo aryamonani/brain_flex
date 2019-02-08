@@ -8,8 +8,9 @@
     margin: 0;
     padding: 0;
     text-align: center;
-    position: relative;
-    top: -162px;
+    position: absolute;
+    top: 530px;
+    left: 560px;
 }
 
 .btn-hover {
