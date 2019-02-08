@@ -47,4 +47,9 @@
     background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
-@media screen and (min-width: 300px){}
+@media screen and (min-width: 300px){
+  buttons
+  {
+    margin: 0;
+    padding: 0;}
+  }
