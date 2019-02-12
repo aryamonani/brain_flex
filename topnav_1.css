@@ -4,14 +4,14 @@ body {
   background: #ccc;
 }
 
-.nav ul {
+.topnav ul {
   list-style: none;
   background-color: #444;
   text-align: center;
   padding: 0;
   margin: 0;
 }
-.nav li {
+.topnav li {
   font-family: 'Oswald', sans-serif;
   font-size: 1em;
   line-height: 10px;
@@ -20,74 +20,79 @@ body {
 }
 #logo{
     position: relative;
-    top: 6px;
+    top: 4px;
     left:40px;
     width:30px;
     height:30px;
     overflow:hidden;
 }
-.nav a {
+.topnav g {
   text-decoration: none;
   color: #fff;
   display: block;
   transition: .3s background-color;
 }
-.nav x {
+.topnav x {
   text-decoration: none;
   color: #fff;
   display: block;
   transition: .3s background-color;
 }
-.nav c {
+.topnav c {
   text-decoration: none;
   color: #fff;
   display: block;
   transition: .3s background-color;
 }
-.nav d {
+.topnav d {
   text-decoration: none;
   color: #fff;
   display: block;
   transition: .3s background-color;
 }
-.nav e {
+.topnav e {
   text-decoration: none;
   color: #fff;
   display: block;
   transition: .3s background-color;
 }
 
-.nav a:hover {
+.topnav g:hover {
   background-color: #f74c36;
+  cursor: pointer;
 }
-.nav x:hover {
+.topnav x:hover {
   background-color: Orange;
+  cursor: pointer;
 }
-.nav c:hover {
+.topnav c:hover {
   background-color: MediumSeaGreen;
+  cursor: pointer;
 }
-.nav d:hover {
+.topnav d:hover {
   background-color: DodgerBlue;
+  cursor: pointer;
 }
-.nav e:hover {
+.topnav e:hover {
   background-color: Purple;
+  cursor: pointer;
 }
 
-.nav a.active {
+.topnav g.active {
   background-color: #fff;
   color: #444;
   cursor: default;
 }
 
 @media screen and (min-width: 300px) {
-  .nav li {
+  .topnav li {
     width: 120px;
     border-bottom: none;
     height: 50px;
     line-height: 50px;
     font-size: 1.4em;
   }
-  .nav li {
+  .topnav li {
     display: inline-block;
     margin-right: -4px;
   }
