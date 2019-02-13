@@ -49,15 +49,21 @@
   </div>
 <div class="column">
   <div class="card">
+    <form>
       <div class="card-section">
-        <img src="brain_flexlogo.png" id="logo" style="position:absolute;top:40px;left:232px;"></img>
-        <form>
+        <img src="brain_flexlogo.png" id="logo" style="position:absolute;top:40px;left:220px;"></img>
   <div class="grid-container">
     <div class="grid-x grid-padding-x">
-      <div class="large-6 cell">
+      <div class="large-12 cell">
+        <form name="SignupForm" action="/submit.php" onsubmit="return signupjs()" method="post">
         <label>
-          <input type="text" placeholder="First Name" onfocus="this.style.border='2px solid red'">
+          <input type="text" placeholder="First Name" onfocus="this.style.border='2px solid tomato'">
+          <input type="text" placeholder="Last Name" onfocus="this.style.border='2px solid yellow'">
+          <input type="email" placeholder="Email Id" onfocus="this.style.border='2px solid MediumSeaGreen'">
+          <input type="password" placeholder="Password" onfocus="this.style.border='2px solid Purple'">
+          <a href="#" class="button round" button type="submit" form="SignupForm" value="Submit">Sign Up</a>
         </label>
+      </form>
       </div>
     </div>
   </div>

@@ -951,8 +951,8 @@ select {
   vertical-align: middle;
   margin: 0 0 1rem 0;
   padding: 0.85em 1em;
-  border: 1px solid transparent;
-  border-radius: 3px;
+  border: 5px solid transparent;
+  border-radius: 15px;
   -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
   font-family: inherit;
@@ -3140,15 +3140,15 @@ a.button:hover, a.button:focus {
           flex-grow: 1;
   margin-bottom: 1rem;
   border: 1px solid #e6e6e6;
-  border-radius: 15px;
-  background: #fff;
+  border-radius: 8px;
+  background: #fefefe;
+  position: fixed;
+  top: 120px;
+  left: 33%;
+  opacity: .9;
   -webkit-box-shadow: none;
           box-shadow: none;
   overflow: hidden;
-  position:fixed;
-  top: 85px;
-  left: 425px;
-  opacity: .8;
   color: #0a0a0a; }
   .card > :last-child {
     margin-bottom: 0; }
@@ -3172,7 +3172,7 @@ a.button:hover, a.button:focus {
   -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
-  padding: 16rem; }
+  padding: 6rem; }
   .card-section > :last-child {
     margin-bottom: 0; }
 
