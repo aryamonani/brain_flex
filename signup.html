@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>Brain Flex | Home</title>
-
+<h2 id="signup"></h2>
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
 <meta name="description" content="A website to improve your concentration.">
@@ -55,17 +55,31 @@
   <div class="grid-container">
     <div class="grid-x grid-padding-x">
       <div class="large-12 cell">
-        <form name="SignupForm" action="/submit.php" onsubmit="return signupjs()" method="post">
-        <label>
-          <input type="text" placeholder="First Name" onfocus="this.style.border='2px solid tomato'">
-          <input type="text" placeholder="Last Name" onfocus="this.style.border='2px solid yellow'">
-          <input type="email" placeholder="Email Id" onfocus="this.style.border='2px solid MediumSeaGreen'">
-          <input type="password" placeholder="Password" onfocus="this.style.border='2px solid Purple'">
-          <a href="#" class="button round" button type="submit" form="SignupForm" value="Submit">Sign Up</a>
+        <form data-abide>
+          <div class="name-field">
+            <input type="text" placeholder="First Name" id="fname" required onfocus="this.style.border='2px solid tomato'">
+            <small class="error"></small>
+          </div>
+          <div class="name-field">
+            <input type="text" placeholder="Last Name" id="lname" required onfocus="this.style.border='2px solid Orange'">
+            <small class="error"></small>
+          </div>
+          <div class="name-field">
+            <input type="text" placeholder="Username" id="uname" required onfocus="this.style.border='2px solid yellow'">
+            <small class="error"></small>
+          </div>
+          <div class="email-field">
+            <input type="email" placeholder="Email Id" id="email" required onfocus="this.style.border='2px solid MediumSeaGreen'">
+            <small class="error"></small>
+          </div>
+          <div class="password-field">
+            <input type="password" placeholder="Password" id="password" required onfocus="this.style.border='2px solid Purple'">
+            <small class="error"></small>
+          </div>
+
+          <button type="submit" class="rounded button">Sign Up</button>
         </label>
       </form>
       </div>
     </div>
   </div>
-</body>
-</html>
