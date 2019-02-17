@@ -3140,11 +3140,11 @@ a.button:hover, a.button:focus {
           flex-grow: 1;
   margin-bottom: 1rem;
   border: 1px solid #e6e6e6;
-  border-radius: 8px;
+  border-radius: 60px;
   background: #fefefe;
   position: fixed;
-  top: 120px;
-  left: 33%;
+  top: 110px;
+  left: 33.5%;
   opacity: .9;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -3172,7 +3172,7 @@ a.button:hover, a.button:focus {
   -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
-  padding: 6rem; }
+  padding: 5rem; }
   .card-section > :last-child {
     margin-bottom: 0; }
 
@@ -6308,3 +6308,58 @@ a.thumbnail {
 .long-delay {
   -webkit-animation-delay: 700ms !important;
           animation-delay: 700ms !important; }
+
+          .card_2 {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-flex: 1;
+            -webkit-flex-grow: 1;
+                -ms-flex-positive: 1;
+                    flex-grow: 1;
+            margin-bottom: 1rem;
+            border: 1px solid #e6e6e6;
+            border-radius: 60px;
+            background: #fefefe;
+            position: fixed;
+            top: 190px;
+            left: 34%;
+            opacity: .9;
+            -webkit-box-shadow: none;
+                    box-shadow: none;
+            overflow: hidden;
+            color: #0a0a0a; }
+            .card_2 > :last-child {
+              margin-bottom: 0; }
+
+          .card_2-divider {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 1 auto;
+                -ms-flex: 0 1 auto;
+                    flex: 0 1 auto;
+            padding: 1rem;
+            background: #e6e6e6; }
+            .card_2-divider > :last-child {
+              margin-bottom: 0; }
+
+          .card_2-section {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1 0 auto;
+                -ms-flex: 1 0 auto;
+                    flex: 1 0 auto;
+            padding: 5rem; }
+            .card_2-section > :last-child {
+              margin-bottom: 0; }
+
+          .card_2-image {
+            min-height: 1px; }
