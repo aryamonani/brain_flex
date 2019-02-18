@@ -19,9 +19,9 @@
   <div class="topnavbar" id="navigation">
     <ul>
       <li><img src="brain_flexlogo.png" id="logo"></img></li>
-      <li class="home"><g href="#">Brain Flex</g></li>
-      <li class="tutorials"><x href="#">Dashboard</x></li>
-      <li class="about"><c href="#">Log In</c></li>
+      <li class="home"><g onclick="location.href='./index.html'">Brain Flex</g></li>
+      <li class="Dashboard"><x href="#">Dashboard</x></li>
+      <li class="log in"><c onclick="location.href='./login.html'">Log In</c></li>
       <li class="news"><d href="#">About Us</d></li>
       <li class="contact"><e href="#">Contact Us</e ></li>
     </ul>
@@ -55,7 +55,7 @@
   <div class="grid-container">
     <div class="grid-x grid-padding-x">
       <div class="large-12 cell">
-        <form data-abide>
+        <form data-abide="ajax" id="signup" novalidate>
           <div class="name-field">
             <input type="text" placeholder="First Name" id="fname" required onfocus="this.style.border='2px solid tomato'">
             <small class="error"></small>
