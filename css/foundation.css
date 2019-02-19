@@ -6476,3 +6476,60 @@ a.thumbnail {
 
 .card_4-image {
   min-height: 1px; }
+
+  /*card4 css is for question page second card similarly copy the attributes with a different div class name.*/
+
+  .card_5 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-bottom: 1rem;
+    border: 1px solid #e6e6e6;
+    border-radius: 60px;
+    background: #fefefe;
+    position: fixed;
+    top: 190px;
+    left: 10%;
+    opacity: .9;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    overflow: hidden;
+    color: #0a0a0a; }
+    .card_5 > :last-child {
+      margin-bottom: 0; }
+
+  .card_5-divider {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    padding: 1rem;
+    background: #e6e6e6; }
+    .card_5-divider > :last-child {
+      margin-bottom: 0; }
+
+  .card_5-section {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+    padding: 6rem; }
+    .card_5-section > :last-child {
+      margin-bottom: 0; }
+
+  .card_5-image {
+    min-height: 1px; }
