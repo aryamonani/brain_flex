@@ -12,7 +12,7 @@ body {
   margin: 0;
 }
 .topnavbar li {
-  font-family: 'Oswald', sans-serif;
+  font-family: CustomFont;
   font-size: 1em;
   line-height: 10px;
   height: 10px;
@@ -102,6 +102,10 @@ body {
   background-color: #fff;
   color: #444;
   cursor: default;
+}
+@font-face {
+font-family: CustomFont;
+src: url(acre.otf);
 }
 
 

@@ -30,7 +30,7 @@ hr {
   overflow: visible; }
 
 pre {
-  font-family: monospace, monospace;
+  font-family: Impact, fantasy;
   font-size: 1em; }
 
 a {
@@ -540,7 +540,9 @@ ul.no-bullet, ol.no-bullet {
     max-width: 100% !important; }
   @page {
     margin: 0.5cm; }
-  p,
+  p,:{
+    font-family: fantasy;
+  }
   h2,
   h3 {
     orphans: 3;
@@ -6499,7 +6501,7 @@ a.thumbnail {
     background: #fefefe;
     position: fixed;
     top: 190px;
-    left: 10%;
+    left: 25%;
     opacity: .9;
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -6527,7 +6529,7 @@ a.thumbnail {
     -webkit-flex: 1 0 auto;
         -ms-flex: 1 0 auto;
             flex: 1 0 auto;
-    padding: 6rem; }
+    padding: 3rem; }
     .card_5-section > :last-child {
       margin-bottom: 0; }
 
