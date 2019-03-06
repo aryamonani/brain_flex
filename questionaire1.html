@@ -19,7 +19,7 @@
      <ul>
        <li><img src="brain_flexlogo.png" id="logo"></img></li>
        <li class="home"><g onclick="location.href='./index.html'">Brain Flex</g></li>
-       <li class="Dashboard"><x onclick="location.href='questionaire1.html'">Dashboard</x></li>
+       <li class="Dashboard"><x onclick="location.href='dashboard.html'">Dashboard</x></li>
        <li class="log in"><c onclick="location.href='./login.html'">Log In</c></li>
        <li class="news"><d onclick="location.href='./about.html'">About Us</d></li>
        <li class="contact"><e onclick="location.href='./contact.html'">Contact Us</e ></li>
@@ -76,16 +76,18 @@
                 <input type="radio" name="choice3" value="almostnever" onclick="check3('choice3')"> Almost Never</input>
                 <br></br>
                 <legend>4. Do you jump from task to task because<br>you just can't seem to focus long enough to finish one completely?</legend>
-                <input type="radio" name="choice4" value="quiteoften"> Quite Often</input>
-                <input type="radio" name="choice4" value="often"> Often</input>
-                <input type="radio" name="choice4" value="sometimes"> Sometimes</input>
-                <input type="radio" name="choice4" value="rarely"> Rarely</input>
-                <input type="radio" name="choice4" value="almostnever"> Almost Never</input>
+                <input type="radio" name="choice4" value="quiteoften" onclick="check4('choice4')"> Quite Often</input>
+                <input type="radio" name="choice4" value="often" onclick="check4('choice4')"> Often</input>
+                <input type="radio" name="choice4" value="sometimes" onclick="check4('choice4')"> Sometimes</input>
+                <input type="radio" name="choice4" value="rarely" onclick="check4('choice4')"> Rarely</input>
+                <input type="radio" name="choice4" value="almostnever" onclick="check4('choice4')"> Almost Never</input>
                 <br></br>
                 <legend>5. How do you deal with boring, repetitive tasks?</legend>
-                <input type="radio" name="choice5" value="fine" onclick="check5('choice5')"> I'm fine with them</input>
-                <input type="radio" name="choice5" value="breaks" onclick="check5('choice5')">I don't mind them but I need breaks often</input>
-                <input type="radio" name="choice5" value="cant" onclick="check5('choice5')"> I can't stand them</input>
+                <input type="radio" name="choice5" value="dont" onclick="check5('choice5')">don't do them</input>
+                <input type="radio" name="choice5" value="cant" onclick="check5('choice5')">can't stand them</input>
+                <input type="radio" name="choice5" value="dontmind" onclick="check5('choice5')">don't mind them</input>
+                <input type="radio" name="choice5" value="fine" onclick="check5('choice5')">fine with them</input>
+                <input type="radio" name="choice5" value="great" onclick="check5('choice5')">great with them</input>
         </form>
        </form>
        </div>
@@ -110,27 +112,32 @@
                 <input type="radio" name="choice7" value="rarely" onclick="check7('choice7')"> Rarely</input>
                 <input type="radio" name="choice7" value="almostnever" onclick="check7('choice7')"> Almost Never</input>
                 <legend>8. Do you have a knack for noticing details (e.g. typos in a document)?<legend>
-                  <input type="radio" name="choice8" value="yes" onclick="check8('choice8')"> Yes</input>
-                  <input type="radio" name="choice8" value="no" onclick="check8('choice8')"> No</input>
+                  <input type="radio" name="choice8" value="quiteoften" onclick="check8('choice8')"> Quite Often</input>
+                  <input type="radio" name="choice8" value="often" onclick="check8('choice8')"> Often</input>
+                  <input type="radio" name="choice8" value="sometimes" onclick="check8('choice8')"> Sometimes</input>
+                  <input type="radio" name="choice8" value="rarely" onclick="check8('choice8')"> Rarely</input>
+                  <input type="radio" name="choice8" value="almostnever" onclick="check8('choice8')"> Almost Never</input>
                 <legend>9. Do you lose your patience easily?</legend>
-                <input type="radio" name="choice9" value="yes" onclick="check9('choice9')"> Yes</input>
+                <input type="radio" name="choice9" value="quiteoften" onclick="check9('choice9')"> Quite Often</input>
+                <input type="radio" name="choice9" value="often" onclick="check9('choice9')"> Often</input>
                 <input type="radio" name="choice9" value="sometimes" onclick="check9('choice9')"> Sometimes</input>
-                <input type="radio" name="choice9" value="no" onclick="check9('choice9')"> No</input>
+                <input type="radio" name="choice9" value="rarely" onclick="check9('choice9')"> Rarely</input>
+                <input type="radio" name="choice9" value="almostnever" onclick="check9('choice9')"> Almost Never</input>
                 <legend>10. How often do you interrupt people during conversations?</legend>
-                <input type="radio" name="choice7" value="quiteoften" onclick="check10('choice10')"> Quite Often</input>
-                <input type="radio" name="choice7" value="often" onclick="check10('choice10')"> Often</input>
-                <input type="radio" name="choice7" value="sometimes" onclick="check10('choice10')"> Sometimes</input>
-                <input type="radio" name="choice7" value="rarely" onclick="check10('choice10')"> Rarely</input>
-                <input type="radio" name="choice7" value="almostnever" onclick="check10('choice10')"> Almost Never</input>
+                <input type="radio" name="choice10" value="quiteoften" onclick="check10('choice10')"> Quite Often</input>
+                <input type="radio" name="choice10" value="often" onclick="check10('choice10')"> Often</input>
+                <input type="radio" name="choice10" value="sometimes" onclick="check10('choice10')"> Sometimes</input>
+                <input type="radio" name="choice10" value="rarely" onclick="check10('choice10')"> Rarely</input>
+                <input type="radio" name="choice10" value="almostnever" onclick="check10('choice10')"> Almost Never</input>
                 <br></br>
-                <button type="submit" class="rounded button"onclick="finalcheck()">Submit</button>
+                <button type="submit" class="rounded button" onclick="finalcheck()">Submit</button>
             </form>
          </form>
          </div>
        </div>
      </div>
      <script>
-        var score1=0;
+        score1=0;
         function check (name){
           var methods = document.getElementsByName(name)
           for (var i=0; i<5; i++) {
@@ -141,7 +148,7 @@
       }
      </script>
      <script>
-      var score2=0;
+       score2=0;
       function check2 (name){
         var methods = document.getElementsByName(name)
         for (var i=0; i<5; i++) {
@@ -152,7 +159,7 @@
     }
      </script>
      <script>
-      var score3=0;
+       score3=0;
       function check3 (name){
         var methods = document.getElementsByName(name)
         for (var i=0; i<5; i++) {
@@ -163,7 +170,7 @@
     }
      </script>
      <script>
-      var score4=0;
+       score4=0;
       function check4 (name){
         var methods = document.getElementsByName(name)
         for (var i=0; i<5; i++) {
@@ -174,24 +181,18 @@
     }
      </script>
      <script>
-      var score5=0;
-      function check5(name){
+       score5=0;
+      function check5 (name){
         var methods = document.getElementsByName(name)
-        if (methods[0].checked == true)
-        {
-          score5=3;
-        }
-        else if (methods[1].checked == true)
-        {
-          score5=1.5;
-        }
-        else {
-          score5=0.5;
+        for (var i=0; i<5; i++) {
+      if (methods[i].checked == true) {
+          score5 =i+1;
         }
       }
+    }
      </script>
      <script>
-      var score6=0;
+       score6=0;
       function check6 (name){
         var methods = document.getElementsByName(name)
         for (var i=0; i<5; i++) {
@@ -202,7 +203,7 @@
     }
     </script>
     <script>
-     var score7=0;
+      score7=0;
      function check7 (name){
        var methods = document.getElementsByName(name)
        for (var i=0; i<5; i++) {
@@ -213,36 +214,29 @@
    }
    </script>
    <script>
-    var score8=0;
+     score8=0;
     function check8 (name){
     var methods = document.getElementsByName(name)
-    if (methods[0].checked == true){
-      score8 =5;
-    }
-    else {
-      score8 =0;
+    for (var i=0; i<5; i++) {
+  if (methods[i].checked == true) {
+      score8 =i+1;
     }
   }
+}
 </script>
 <script>
- var score9=0;
- function check9(name){
-   var methods = document.getElementsByName(name)
-   if (methods[0].checked == true)
-   {
-     score9=3;
-   }
-   else if (methods[1].checked == true)
-   {
-     score9=1.5;
-   }
-   else {
-     score9=0.5;
-   }
+  score9=0;
+ function check9 (name){
+ var methods = document.getElementsByName(name)
+ for (var i=0; i<5; i++) {
+if (methods[i].checked == true) {
+   score9 =i+1;
  }
+}
+}
 </script>
 <script>
- var score10=0;
+ score10=0;
  function check10 (name){
    var methods = document.getElementsByName(name)
    for (var i=0; i<5; i++) {
@@ -253,8 +247,9 @@
 }
 </script>
 <script>
+  finalscore = 0;
   function finalcheck(){
-    var finalscore = score1+score2+score3+score4+score5+score6+score7+score8+score9+score10;
+     finalscore = score1+score2+score3+score4+score5+score6+score7+score8+score9+score10;
     alert(finalscore);
   }
 </script>
