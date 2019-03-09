@@ -52,7 +52,7 @@
    <div class="card_3">
        <div class="card_3-section">
          <form>
-           <img src="brain_flexlogo.png" id="logo" style="position:relative;top:-3px;left:260px;"></img>
+           <img src="brain_flexlogo.png" id="logo" style="position:relative;top:-3px;left:290px;"></img>
              <form>
                <legend><center>1. Do you get distracted easily (e.g. by background noise,<br> other people's conversations, etc.)?<center></legend>
                 <input type="radio" name="choice1" value="quiteoften" onclick="check('choice1')"> Quite Often</input>
@@ -131,6 +131,7 @@
                 <input type="radio" name="choice10" value="almostnever" onclick="check10('choice10')"> Almost Never</input>
                 <br></br>
                 <button type="submit" class="rounded button" onclick="finalcheck()">Submit</button>
+
             </form>
          </form>
          </div>
@@ -247,10 +248,15 @@ if (methods[i].checked == true) {
 }
 </script>
 <script>
-  finalscore = 0;
+  finalscore
   function finalcheck(){
-     finalscore = score1+score2+score3+score4+score5+score6+score7+score8+score9+score10;
-    alert(finalscore);
+    var finalscore = score1+score2+score3+score4+score5+score6+score7+score8+score9+score10;
+    if (finalscore==0) {
+      alert('Please fill out the form to proceed')
+    }
+    else {
+      alert(finalscore);
+    }
   }
 </script>
 </body>
