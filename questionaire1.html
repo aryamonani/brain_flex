@@ -98,7 +98,7 @@
          <div class="card_4-section">
            <form>
            <img src="brain_flexlogo.png" id="logo" style="position:relative;top:-3px;left:320px;" ></img>
-            <form>
+            <form action="dashboard.html" method="post">
               <legend><center>6. You're on the phone with a friend just as your favorite TV show starts.<br> How difficult would it be for you to pay attention to the conversation?<center></legend>
               <input type="radio" name="choice6" value="extreme" onclick="check6('choice6')"> Extremely Difficult</input>
               <input type="radio" name="choice6" value="very" onclick="check6('choice6')"> Very Difficult</input>
@@ -130,8 +130,7 @@
                 <input type="radio" name="choice10" value="rarely" onclick="check10('choice10')"> Rarely</input>
                 <input type="radio" name="choice10" value="almostnever" onclick="check10('choice10')"> Almost Never</input>
                 <br></br>
-                <button type="submit" class="rounded button" onclick="finalcheck()">Submit</button>
-
+                <button type="reset" class="rounded button" onclick="finalcheck()">Submit</button>
             </form>
          </form>
          </div>
@@ -251,13 +250,9 @@ if (methods[i].checked == true) {
   finalscore
   function finalcheck(){
     var finalscore = score1+score2+score3+score4+score5+score6+score7+score8+score9+score10;
-    if (finalscore==0) {
-      alert('Please fill out the form to proceed')
+    alert(finalscore);
+    window.location.href = "./dashboard.html";
     }
-    else {
-      alert(finalscore);
-    }
-  }
 </script>
 </body>
 </html>
