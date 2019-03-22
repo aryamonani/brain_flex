@@ -51,9 +51,9 @@
  <div class="column">
    <div class="card_3">
        <div class="card_3-section">
-         <form>
+         <form method="GET">
            <img src="brain_flexlogo.png" id="logo" style="position:relative;top:-3px;left:290px;"></img>
-             <form method="get">
+             <form>
                <legend><center>1. Do you get distracted easily (e.g. by background noise,<br> other people's conversations, etc.)?<center></legend>
                 <input type="radio" name="choice1" value="quiteoften" onclick="check('choice1')"> Quite Often</input>
                 <input type="radio" name="choice1" value="often" onclick="check('choice1')"> Often</input>
@@ -96,7 +96,7 @@
    <div class="column">
      <div class="card_4">
          <div class="card_4-section">
-           <form method="get">
+           <form>
            <img src="brain_flexlogo.png" id="logo" style="position:relative;top:-3px;left:320px;" ></img>
             <form action="dashboard.html" method="post">
               <legend><center>6. You're on the phone with a friend just as your favorite TV show starts.<br> How difficult would it be for you to pay attention to the conversation?<center></legend>
@@ -254,9 +254,12 @@ if (methods[i].checked == true) {
       alert('please fill the form to proceed');
       window.location.href = './questionaire1.html';
     }
+    else if (finalscore==50) {
+      finalscore=finalscore-4;
+      window.location.href = './dashboard.html' +'#' + finalscore;
+    }
     else {
-      alert(finalscore);
-      window.location.href = './dashboard.html';
+      window.location.href = './dashboard.html' +'#' + finalscore;
     }
     }
 </script>

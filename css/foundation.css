@@ -6613,8 +6613,8 @@ a.thumbnail {
   border-radius: 60px;
   background: #e6e6e6;
   position: fixed;
-  top: 40%;
-  left: 40.7%;
+  top: 32%;
+  left: 23%;
   opacity: .9;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -6643,7 +6643,7 @@ a.thumbnail {
   -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
-  padding: 0.5rem;
+  padding: 7rem;
   color: #ccc; }
   .card_7-section > :last-child {
     margin-bottom: 0; }

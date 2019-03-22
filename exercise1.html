@@ -1,6 +1,6 @@
 <html>
 <head>
- <title>Brain Flex | Dashboard</title>
+ <title>Brain Flex | Home</title>
 
  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
@@ -13,13 +13,7 @@
    <link rel="stylesheet" href="css/foundation.css"/>
      <link rel="stylesheet" href="css/app.css"/>
      <script src="js/vendor/modernizr.js"></script>
-     <script src="js/vendor/app.js"></script>
   </head>
-  <footer>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="js/vendor/snap.svg.js"></script>
-    <script src="js/jquery.pizza.js"></script>
-  </footer>
 <body>
    <div class="topnavbar">
      <ul>
@@ -32,7 +26,7 @@
      </ul>
    </div>
    </body>
-   <body onload="scoremessage()">
+   <body>
  <div class="fullpage-wrapper">
    <div class="reactor-container">
      <div class="reactor-container-inner circle abs-center"></div>
@@ -52,23 +46,5 @@
      </div>
    </div>
  </div>
- <div class="column">
-   <div class="card_7">
-    <div class="card_7-section">
-      <img src="brain_flexlogo.png" id="logo" style="position:absolute;top:60px;left:350px;"></img>
-        <p style="font-family:CustomFont;font-size:16px;color:black;">You have scored <span id="span1"></span> on 50.
-          It seems there is room for improvement,<br> please follow our prescribed exercises regularly and <br> feel the changes yourself.
-          Happy flexing💪</p>
-          <button type="submit" class="rounded button" onclick="location.href='./exercise1.html'">Begin</button>
-    </div>
-   </div>
- </div>
-</div>
- <script>
-  function scoremessage(){
-    var finalscore=window.location.hash.substring(1);
-        document.getElementById('span1').innerHTML=finalscore;
-    }
- </script>
 </body>
 </html>
