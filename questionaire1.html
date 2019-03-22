@@ -217,12 +217,22 @@
      score8=0;
     function check8 (name){
     var methods = document.getElementsByName(name)
-    for (var i=0; i<5; i++) {
-  if (methods[i].checked == true) {
-      score8 =i+1;
+    if (methods[0].checked == true) {
+        score8 =1;
     }
-  }
-}
+    else if (methods[1].checked ==true) {
+        score8 =2;
+    }
+    else if (methods[2].checked ==true) {
+        score8 =3;
+    }
+    else if (methods[3].checked ==true) {
+        score8 =4;
+    }
+    else if (methods[4].checked ==true) {
+        score8 =5;
+    }
+    }
 </script>
 <script>
   score9=0;

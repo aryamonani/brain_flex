@@ -165,3 +165,8 @@
   border-color: #32506d;
 }
 /* the above css is for social media icons*/
+
+.switch.success input:checked ~ .switch-paddle {
+  background: #3adb76;
+}
+/* the above css is for switch*/
