@@ -55,9 +55,9 @@
             <div class="grid-container">
     <div class="grid-x grid-padding-x">
       <div class="large-12 cell">
-        <form data-abide="ajax" id="signup" novalidate>
+        <form id="signup" onsubmit="">
           <div class="name-field">
-            <input type="text" placeholder="First Name" id="fname" required onfocus="this.style.border='2px solid tomato'">
+            <input type="text" placeholder="First Name" id="fname" onfocus="this.style.border='2px solid tomato'" required>
             <small class="error"></small>
           </div>
           <div class="name-field">
@@ -76,11 +76,17 @@
             <input type="password" placeholder="Password" id="password" required onfocus="this.style.border='2px solid Purple'">
             <small class="error"></small>
           </div>
-          <button type="submit" class="rounded button" onclick="location.href='./questionaire1.html'">Sign Up</button>
+          <button type="reset" class="rounded button" onclick="validatesignup()">Sign Up</button>
       </form>
     </form>
       </div>
     </div>
   </div>
+  <script>
+    function validatesignup(){
+      alert('Sign up successfull!')
+      window.location.href="./questionaire1.html";
+    }
+  </script>
 </body>
 </html>

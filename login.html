@@ -55,7 +55,7 @@
       <div class="grid-container">
         <div class="grid-x grid-padding-x">
           <div class="large-12 cell">
-            <form action="questionaire1.html" data-abide novalidate>
+            <form>
               <div class="name-field">
                 <input type="text" placeholder="Username" id="uname" required onfocus="this.style.border='2px solid tomato'">
                 <small class="error"></small>
@@ -64,11 +64,16 @@
                 <input type="password" placeholder="Password" id="password" required onfocus="this.style.border='2px solid Purple'">
                 <small class="error"></small>
               </div>
-              <button type="submit" class="rounded button" onclick="location.href='questionaire1.html'">Log In</button>
-            </label>
+              <button type="reset" class="rounded button" onclick="validatelogin()">Log In</button>
           </form>
           </div>
         </div>
       </div>
+      <script>
+        function validatelogin(){
+          alert('Log in successfull!');
+          window.location.href="./questionaire1.html";
+        }
+      </script>
     </body>
   </html>
