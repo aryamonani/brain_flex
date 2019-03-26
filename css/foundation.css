@@ -6644,7 +6644,7 @@ a.thumbnail {
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
   padding: 7rem;
-  color: #ccc; }
+}
   .card_7-section > :last-child {
     margin-bottom: 0; }
 
@@ -6670,9 +6670,9 @@ a.thumbnail {
     border: 1px solid #e6e6e6;
     border-radius: 60px;
     background: #e6e6e6;
-    position: fixed;
-    top: 32%;
-    left: 23%;
+    position: absolute;
+    top: 15%;
+    left: 3%;
     opacity: .9;
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -6690,7 +6690,7 @@ a.thumbnail {
     -webkit-flex: 0 1 auto;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
-    padding: 1rem;
+    padding: 2rem;
     background: #cacaca; }
 
     .card_8-divider > :last-child {
@@ -6701,11 +6701,70 @@ a.thumbnail {
     -webkit-flex: 1 0 auto;
         -ms-flex: 1 0 auto;
             flex: 1 0 auto;
-    padding: 7rem;
-    color: #ccc; }
+    padding: 1rem;
+}
     .card_8-section > :last-child {
       margin-bottom: 0; }
 
   .card_8-image {
     min-height: 1px; }
-    /*card8 css is for exercise1 page similarly copy the attributes with a different div class name.*/
+
+/*card8 css is for exercise1 page similarly copy the attributes with a different div class name.*/
+
+.card_9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-bottom: 1rem;
+  border: 1px solid #e6e6e6;
+  border-radius: 60px;
+  background: #e6e6e6;
+  position: absolute;
+  top: 15%;
+  left: 720px;
+  opacity: .9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  overflow: hidden;
+  color: #0a0a0a; }
+  .card_9 > :last-child {
+    margin-bottom: 0; }
+
+.card_9-divider {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  padding: 2rem;
+  background: #cacaca; }
+
+  .card_9-divider > :last-child {
+    margin-bottom: 0; }
+
+.card_9-section {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  padding: 0.5rem;
+}
+  .card_9-section > :last-child {
+    margin-bottom: 0; }
+
+.card_9-image {
+  min-height: 1px; }
+/*card8 css is for exercise1 page similarly copy the attributes with a different div class
