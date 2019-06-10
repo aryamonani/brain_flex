@@ -6290,7 +6290,14 @@ a.thumbnail {
 .ease-in-out {
   -webkit-animation-timing-function: ease-in-out !important;
           animation-timing-function: ease-in-out !important; }
+ <title>Brain Flex | Exercise</title>
 
+ <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+ <meta http-equiv="refresh" content="180;./exercise2.html" />
+     <meta http-equiv="refresh" content="180;./exercise2.html" />
+ <meta name="description" content="A website to improve your concentration.">
+ <meta name="author" content="Arya Monani">
+ <link rel="shortcut icon" type="image/ico" href="./favicon.ico" />
 .bounce-in {
   -webkit-animation-timing-function: cubic-bezier(0.485, 0.155, 0.24, 1.245) !important;
           animation-timing-function: cubic-bezier(0.485, 0.155, 0.24, 1.245) !important; }
